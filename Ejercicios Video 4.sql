@@ -16,7 +16,9 @@ SELECT * FROM productos  WHERE PAISDEORIGEN='ESPAÑA' AND FECHA BETWEEN '2020-02
 
 /*Realizar una consulta que muestre los campos “Empresa”, “Dirección” y “Población” de la tabla “Clientes”. Ordenar la consulta por el campo “Población”
 ascendentemente y por “Dirección” descendentemente.*/
-SELECT EMPRESA, DIRECCION, POBLACION FROM clientes ORDER BY POBLACION ASC, DIRECCION DESC;
+SELECT EMPRESA, DIRECCION, POBLACION FROM clientes ORDER BY POBLACION, DIRECCION DESC;
 
 /*Realizar una consulta que muestre todos los campos de la tabla “Clientes”. Ordenar los resultados por el campo “Población” ascendentemente.*/
-SELECT * FROM clientes ORDER BY POBLACION ASC;
+SELECT * FROM clientes ORDER BY POBLACION;
+
+/*Por defecto mysql ordena de manera ascendente, con lo cual en el order by no seria necesario aplicar el order by ASC cuando se quiere ordenar de esta manera*/
