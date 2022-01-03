@@ -1,24 +1,24 @@
-/*Consultas de ejemplo del video 4*/
-/*ORDER BY permite la ordenacion de campos  segun los parametros que queramos*/
+/*Example Queries from Video 4*/
+/*ORDER BY allows the ordering of fields according to the parameters we want*/
 SELECT * FROM productos WHERE SECCION ='DEPORTES' OR SECCION= 'CERAMICA' ORDER BY PRECIO DESC;
 SELECT * FROM productos WHERE SECCION ='DEPORTES' OR SECCION= 'CERAMICA' ORDER BY SECCION ASC;
 
-/*Esto es lo mismo que arriba pero en una sola linea*/
+/*This is the same as above but on one line only*/
 SELECT * FROM productos WHERE SECCION ='DEPORTES' OR SECCION= 'CERAMICA' ORDER BY SECCION ASC, PRECIO DESC; 
 
-/*Y se pueden crear las consultas que queramos como en el siguiente ejemplo*/
+/*And you can create as many queries as you like as in the following example*/
 SELECT * FROM productos WHERE SECCION ='DEPORTES' OR SECCION= 'CERAMICA' ORDER BY SECCION, PRECIO, PAISDEORIGEN;
 
 
-/*Realizar una consulta que muestre aquellos productos españoles cuya fecha esté comprendida entre febrero y mayo del 2020. Ordenar los resultados por el campo
-“Nombre artículo” descendentemente.*/
+/*Perform a query showing those Spanish products whose date is between February and May 2020. Sort the results by the field
+"Nombre del articulo" in descending order.*/
 SELECT * FROM productos  WHERE PAISDEORIGEN='ESPAÑA' AND FECHA BETWEEN '2020-02-01' AND '2020-05-31' ORDER BY NOMBREARTICULO DESC; 
 
-/*Realizar una consulta que muestre los campos “Empresa”, “Dirección” y “Población” de la tabla “Clientes”. Ordenar la consulta por el campo “Población”
-ascendentemente y por “Dirección” descendentemente.*/
+/*Perform a query that displays the "Compañia", "Direccion" and "Ciudad" fields of the "Clientes" table. Sort the query by the "Ciudad" field
+in ascending order and by "Direccion" in descending order*/
 SELECT EMPRESA, DIRECCION, POBLACION FROM clientes ORDER BY POBLACION, DIRECCION DESC;
 
-/*Realizar una consulta que muestre todos los campos de la tabla “Clientes”. Ordenar los resultados por el campo “Población” ascendentemente.*/
+/*Perform a query showing all the fields of the "Clientes" table. Sort the results by the "Poblacion" field in ascending order.*/
 SELECT * FROM clientes ORDER BY POBLACION;
 
-/*Por defecto mysql ordena de manera ascendente, con lo cual en el order by no seria necesario aplicar el order by ASC cuando se quiere ordenar de esta manera*/
+/*By default mysql sorts in ascending order, so in the order by order it would not be necessary to apply the order by ASC when you want to sort in this way.*/
