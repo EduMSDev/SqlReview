@@ -1,0 +1,4 @@
+"anterior_codigo","anterior_nombre","anterior_seccion","anterior_precio","anterior_importado","anterior_pais","anterior_fecha","nuevo_codigo","nuevo_nombre","nuevo_seccion","nuevo_precio","nuevo_importado","nuevo_pais","nueva_fecha","usuario","fecha_modificacion"
+AR07,SERRUCHO,CONFECCION,30,SI,FRANCIA,"2019-05-20",AR07,SERRUCHO,CONFECCION,50,SI,FRANCIA,"2019-05-20",root@localhost,"2022-01-11"
+AR22,MARTILLO,FERRETERIA,11,No,ESPAÑA,"2021-05-07",AR22,MARTILLO,FERRETERIA,425,No,ESPAÑA,"2021-05-07",root@localhost,"2022-01-11"
+AR08,CORREPASILLOS,JUGUETERIA,103,SI,JAPON,"2019-07-08",AR08,CORREPASILLOS,JUGUETERIA,-100,SI,JAPON,"2019-07-08",root@localhost,"2022-01-13"
